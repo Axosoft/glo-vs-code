@@ -28,7 +28,7 @@ node('centos') {
       fileName = build.build_vs_code(configuration)
     }
 
-    slackSend color: '#00FF00', message: "${target}  -  `${configuration}` build completed  -  plugin ready: https://jenkins2.axosoft.com/job/GitKraken/job/glo-atom/job/dev/lastSuccessfulBuild/artifact/${fileName}", channel: slackChannel
+    slackSend color: '#00FF00', message: "${target}  -  `${configuration}` build completed  -  plugin ready: https://jenkins2.axosoft.com/job/GitKraken/job/Glo%20VS%20Code/job/dev/lastSuccessfulBuild/artifact/${fileName}", channel: slackChannel
   }
   catch (err) {
     slackSend color: '#FF0000', message: "${target}  -  `${configuration}` build failed", channel: slackChannel
