@@ -1,7 +1,11 @@
 .DS_Store
 
+# Glo
+src/glo.js
+
 # VS Code
 out
+*.vsix
 
 # Logs
 logs

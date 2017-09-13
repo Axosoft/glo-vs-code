@@ -38,7 +38,7 @@ export function deactivate() {
 
 class GloContentProvider implements vscode.TextDocumentContentProvider {
     provideTextDocumentContent(uri: vscode.Uri, token: vscode.CancellationToken) {
-        const bundlePath = path.resolve(__dirname, '..', '..', '..', 'app.gitkraken.com', 'static', 'bundle.js');
+        const bundlePath = path.resolve(__dirname, 'glo.js');
         const bundleUri = 'file://' + bundlePath;
 
         return `
