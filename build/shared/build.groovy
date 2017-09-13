@@ -27,6 +27,9 @@ def build_vs_code(configuration) {
   // copy bundle to extension src folder
   sh 'cp app.gitkraken.com/static/bundle.js src/glo.js'
 
+  // install extension build dependencies
+  sh 'npm install'
+
   // build the extension file
   sh 'vsce package'
 
