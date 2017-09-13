@@ -31,7 +31,7 @@ def build_vs_code(configuration) {
   sh 'npm install'
 
   // build the extension file
-  sh 'vsce package'
+  sh 'node_modules/.bin/vsce package'
 
   def extensionFilename = sh (
     script: 'find *.vsix',
