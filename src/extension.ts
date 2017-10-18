@@ -2,7 +2,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import * as path from 'path';
+import config from './config';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -33,8 +33,7 @@ export function deactivate() {
 
 class GloContentProvider implements vscode.TextDocumentContentProvider {
     provideTextDocumentContent(uri: vscode.Uri, token: vscode.CancellationToken) {
-        const bundlePath = path.resolve(__dirname, 'glo.js');
-        const bundleUri = 'file://' + bundlePath;
+        const appUrlWithSlash = config.appUrl + (config.appUrl.endsWith('/') ? '' : '/');
 
         return `
             <!DOCTYPE html>
@@ -60,7 +59,7 @@ class GloContentProvider implements vscode.TextDocumentContentProvider {
             </head>
             <body>
                 <div id="app"></div>
-                <script charset="utf-8" src="${bundleUri}"></script>
+                <script charset="utf-8" src="${appUrlWithSlash}/bundle.js"></script>
             </body>
             </html>
         `;

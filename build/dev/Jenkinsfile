@@ -19,10 +19,6 @@ node('centos') {
     // load script
     def build = load "./build/shared/build.groovy"
 
-    stage("Build app bundle") {
-      build.build_app_bundle(configuration)
-    }
-
     def fileName
     stage("Build ${target}") {
       fileName = build.build_vs_code(configuration)

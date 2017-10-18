@@ -1,7 +1,6 @@
 .DS_Store
 
-# Glo
-src/glo.js
+config.ts
 
 # VS Code
 out
