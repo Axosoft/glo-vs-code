@@ -17,6 +17,13 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     context.subscriptions.push(disposable);
+
+    const statusBarItem = vscode.window.createStatusBarItem();
+    statusBarItem.text = 'Glo';
+    statusBarItem.command = 'extension.openGlo';
+    statusBarItem.show();
+
+    context.subscriptions.push(statusBarItem);
 }
 
 export function deactivate() {

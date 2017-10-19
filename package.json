@@ -11,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.openGlo"
+    "*"
   ],
   "main": "./out/src/extension",
   "contributes": {
