@@ -1,21 +1,12 @@
 #!groovy
 
-def target = "Glo VS Code"
-def configuration = "dev"
-def slackChannel = "#axo-dev-stream"
+gloPipeline {
+  target = "Glo VS Code"
+  configuration = "dev"
+  slackChannel = "#axo-dev-stream"
+  skipDocker = true
 
-node('centos') {
-  slackSend message: "${target}  -  `${configuration}` build starting", channel: slackChannel
-
-  try {
-    stage("Pull repo") {
-      // start clean
-      deleteDir()
-
-      // pull files from git
-      checkout scm
-    }
-
+  buildScript = {
     // load script
     def build = load "./build/shared/build.groovy"
 
@@ -23,11 +14,5 @@ node('centos') {
     stage("Build ${target}") {
       fileName = build.build_vs_code(configuration)
     }
-
-    slackSend color: '#00FF00', message: "${target}  -  `${configuration}` build completed  -  plugin ready: https://jenkins2.axosoft.com/job/GitKraken/job/Glo%20VS%20Code/job/dev/lastSuccessfulBuild/artifact/${fileName}", channel: slackChannel
-  }
-  catch (err) {
-    slackSend color: '#FF0000', message: "${target}  -  `${configuration}` build failed", channel: slackChannel
-    throw err
   }
 }
