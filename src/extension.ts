@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
             'vscode.previewHtml',
             vscode.Uri.parse('glo://view'),
             undefined,
-            'GK Glo'
+            'Glo'
         );
     });
 

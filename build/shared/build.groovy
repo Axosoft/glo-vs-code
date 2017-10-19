@@ -4,6 +4,11 @@ def build_vs_code(configuration) {
     sh "cat $GLO_VS_CODE_CONFIG_PATH > src/config.ts"
   }
 
+  // add a '-dev' or '-staging' flag to the extension name
+  if (configuration == 'dev' || configuration == 'staging') {
+    sh "sed -i -e 's/\"name\": \"glo-vs-code\"/\"name\": \"glo-vs-code-${configuration}\"/' package.json"
+  }
+
   // install extension build dependencies
   sh 'npm install'
 
