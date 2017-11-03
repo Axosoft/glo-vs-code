@@ -1,7 +1,10 @@
 .DS_Store
 
+config.ts
+
 # VS Code
 out
+*.vsix
 
 # Logs
 logs

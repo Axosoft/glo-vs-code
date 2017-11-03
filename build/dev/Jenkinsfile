@@ -1,0 +1,18 @@
+#!groovy
+
+gloPipeline {
+  target = "Glo VS Code"
+  configuration = "dev"
+  slackChannel = "#axo-dev-stream"
+  skipDocker = true
+
+  buildScript = {
+    // load script
+    def build = load "./build/shared/build.groovy"
+
+    def fileName
+    stage("Build ${target}") {
+      fileName = build.build_vs_code(configuration)
+    }
+  }
+}
