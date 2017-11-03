@@ -2,7 +2,7 @@
   "name": "glo-vs-code",
   "displayName": "Glo",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "Axosoft",
   "engines": {
     "vscode": "^1.14.0"
