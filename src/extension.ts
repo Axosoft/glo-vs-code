@@ -38,7 +38,11 @@ class GloContentProvider implements vscode.TextDocumentContentProvider {
             <html>
             <head>
                 <meta charset="utf-8">
-                <title>GK Glo</title>
+                <title>GitKraken Glo</title>
+                <link href="https://unpkg.com/basscss@8.0.3/css/basscss.min.css" rel="stylesheet">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+                <script src="https://use.fontawesome.com/a7d36f32d6.js"></script>
                 <style>
                     body {
                         padding: 0;
