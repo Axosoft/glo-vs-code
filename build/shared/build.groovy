@@ -10,7 +10,7 @@ def build_vs_code(configuration) {
   }
 
   // install extension build dependencies
-  sh 'npm install'
+  sh 'yarn'
 
   // build the extension file
   sh 'node_modules/.bin/vsce package'
