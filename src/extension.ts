@@ -39,10 +39,6 @@ class GloContentProvider implements vscode.TextDocumentContentProvider {
             <head>
                 <meta charset="utf-8">
                 <title>GitKraken Glo</title>
-                <link href="https://unpkg.com/basscss@8.0.3/css/basscss.min.css" rel="stylesheet">
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-                <script src="https://use.fontawesome.com/a7d36f32d6.js"></script>
                 <style>
                     body {
                         padding: 0;
@@ -54,14 +50,15 @@ class GloContentProvider implements vscode.TextDocumentContentProvider {
                         right: 0;
                     }
 
-                    #app {
+                    iframe {
                         height: 100%;
+                        width: 100%;
+                        border: none;
                     }
                 </style>
             </head>
             <body>
-                <div id="app"></div>
-                <script charset="utf-8" src="${appUrlWithSlash}/bundle.js"></script>
+                <iframe src="${appUrlWithSlash}" />
             </body>
             </html>
         `;
