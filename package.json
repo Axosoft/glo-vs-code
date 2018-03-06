@@ -2,7 +2,7 @@
   "name": "glo-vs-code",
   "displayName": "Glo",
   "description": "",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "publisher": "Axosoft",
   "engines": {
     "vscode": "^1.14.0"
@@ -17,7 +17,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.openGlo",
+        "command": "extension.glo.open",
         "title": "Open Glo"
       }
     ]
