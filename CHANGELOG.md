@@ -1,7 +1,14 @@
 # Change Log
-All notable changes to the "glo-vs-code" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.2.0
+- Fixed "Sign in with GitHub" option on the login page
+- Fixed attachment links inside card descriptions/comments
 
-## [Unreleased]
+## 0.1.2
+- Fixed broken link interactions caused by website update
+
+## 0.1.1
+- Fixed broken styles/layout caused by website update
+
+## 0.1.0
 - Initial release
