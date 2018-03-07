@@ -1,19 +1,33 @@
 {
-  "name": "glo-vs-code",
-  "displayName": "Glo",
-  "description": "",
+  "name": "gitkraken-glo",
+  "displayName": "GitKraken Glo",
   "version": "0.2.0",
-  "publisher": "Axosoft",
+  "publisher": "axosoft",
+  "author": "Axosoft, LLC",
+  "description": "IN CLOSED BETA. Open GitKraken Glo as a VS Code tab.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Axosoft/glo-vs-code.git"
+  },
   "engines": {
     "vscode": "^1.14.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "glo",
+    "gitkraken",
+    "tasks",
+    "todo",
+    "issue tracker"
+  ],
+  "icon": "icon.png",
+  "main": "./out/src/extension",
   "activationEvents": [
     "*"
   ],
-  "main": "./out/src/extension",
   "contributes": {
     "commands": [
       {
