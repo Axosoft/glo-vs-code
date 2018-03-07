@@ -23,7 +23,7 @@ gloPipeline {
 
     // add a '-dev' or '-staging' flag to the extension name
     if (configuration == 'dev' || configuration == 'staging') {
-      sh "sed -i -e 's/\"name\": \"glo-vs-code\"/\"name\": \"glo-vs-code-${configuration}\"/' package.json"
+      sh "sed -i -e 's/\"name\": \"gitkraken-glo\"/\"name\": \"gitkraken-glo-${configuration}\"/' package.json"
     }
 
     // install extension build dependencies
