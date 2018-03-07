@@ -2,10 +2,10 @@
 
 def _configuration = "dev"
 
-if (env.JOB_NAME =~ /Production/) {
+if (env.JOB_NAME =~ /production/) {
   _configuration = "production"
 }
-if (env.JOB_NAME =~ /Staging/) {
+if (env.JOB_NAME =~ /staging/) {
   _configuration = "staging"
 }
 
