@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
     const contentProviderRegistration = vscode.workspace.registerTextDocumentContentProvider('glo', new GloContentProvider());
     context.subscriptions.push(contentProviderRegistration);
 
-    let disposable = vscode.commands.registerCommand('extension.openGlo', () => {
+    let openCommand = vscode.commands.registerCommand('extension.glo.open', () => {
         vscode.commands.executeCommand(
             'vscode.previewHtml',
             vscode.Uri.parse('glo://view'),
@@ -16,11 +16,20 @@ export function activate(context: vscode.ExtensionContext) {
         );
     });
 
-    context.subscriptions.push(disposable);
+    context.subscriptions.push(openCommand);
+
+    let openLinkCommand = vscode.commands.registerCommand('extension.glo.openLink', (uri) => {
+        vscode.commands.executeCommand(
+            'vscode.open',
+            vscode.Uri.parse(uri)
+        );
+    });
+
+    context.subscriptions.push(openLinkCommand);
 
     const statusBarItem = vscode.window.createStatusBarItem();
     statusBarItem.text = 'Glo';
-    statusBarItem.command = 'extension.openGlo';
+    statusBarItem.command = 'extension.glo.open';
     statusBarItem.show();
 
     context.subscriptions.push(statusBarItem);
@@ -56,6 +65,21 @@ class GloContentProvider implements vscode.TextDocumentContentProvider {
                         border: none;
                     }
                 </style>
+                <script>
+                    window.addEventListener('message', (event) => {
+                        const data = event.data;
+                        if (!data) {
+                            return;
+                        }
+
+                        if (data.channel === 'shell.openExternal') {
+                            window.parent.postMessage({
+                                command: 'did-click-link',
+                                data: 'command:extension.glo.openLink?' + JSON.stringify(data.args[0])
+                            }, 'file://');
+                        }
+                    });
+                </script>
             </head>
             <body>
                 <iframe src="${appUrlWithSlash}" />
