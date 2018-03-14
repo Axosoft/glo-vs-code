@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.2.0
+## 1.0.0
 - Fixed "Sign in with GitHub" option on the login page
 - Fixed attachment links inside card descriptions/comments
 
