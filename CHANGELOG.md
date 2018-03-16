@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.1
+- Fixed issue with the extension pointing to the wrong version of Glo
+
 ## 1.0.0
 - Fixed "Sign in with GitHub" option on the login page
 - Fixed attachment links inside card descriptions/comments
