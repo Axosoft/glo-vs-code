@@ -1,7 +1,7 @@
 {
   "name": "gitkraken-glo",
   "displayName": "GitKraken Glo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "axosoft",
   "author": "Axosoft, LLC",
   "description": "IN CLOSED BETA. Open GitKraken Glo as a VS Code tab.",
