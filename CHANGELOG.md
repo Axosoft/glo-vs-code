@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.2
+- Fixed some urls not opening correctly
+
 ## 1.0.1
 - Fixed issue with the extension pointing to the wrong version of Glo
 

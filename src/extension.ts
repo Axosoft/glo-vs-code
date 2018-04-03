@@ -71,11 +71,12 @@ class GloContentProvider implements vscode.TextDocumentContentProvider {
                         if (!data) {
                             return;
                         }
+                        const uri = JSON.stringify(encodeURI(data.args[0]));
 
                         if (data.channel === 'shell.openExternal') {
                             window.parent.postMessage({
                                 command: 'did-click-link',
-                                data: 'command:extension.glo.openLink?' + JSON.stringify(data.args[0])
+                                data: 'command:extension.glo.openLink?' + uri
                             }, 'file://');
                         }
                     });
