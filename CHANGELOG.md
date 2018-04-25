@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.3
+- Updated extension description and details.
+
 ## 1.0.2
 - Fixed some urls not opening correctly
 
