@@ -1,10 +1,10 @@
 {
   "name": "gitkraken-glo",
   "displayName": "GitKraken Glo",
-  "version": "1.0.2",
+  "version": "1.0.3-rc",
   "publisher": "axosoft",
   "author": "Axosoft, LLC",
-  "description": "IN CLOSED BETA. Open GitKraken Glo as a VS Code tab.",
+  "description": "An issue board for tracking issues and tasks.",
   "license": "MIT",
   "repository": {
     "type": "git",
