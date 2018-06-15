@@ -11,7 +11,7 @@
     "url": "https://github.com/Axosoft/glo-vs-code.git"
   },
   "engines": {
-    "vscode": "^1.14.0"
+    "vscode": "^1.23.0"
   },
   "categories": [
     "Other"
@@ -42,12 +42,14 @@
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
+  "dependencies": {
+    "vscode": "^1.1.18"
+  },
   "devDependencies": {
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
     "mocha": "^2.3.3",
     "typescript": "^2.0.3",
-    "vsce": "^1.30.0",
-    "vscode": "^1.0.0"
+    "vsce": "^1.30.0"
   }
 }
