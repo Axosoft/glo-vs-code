@@ -47,23 +47,29 @@ export function activate(context: vscode.ExtensionContext) {
 
 export function deactivate() {}
 
+let _panel: vscode.WebviewPanel;
 function createWebviewPanel(context: vscode.ExtensionContext) {
-    const panel = vscode.window.createWebviewPanel(
+    if (_panel) {
+        _panel.reveal();
+        return;
+    }
+
+    _panel = vscode.window.createWebviewPanel(
         'gitkraken-glo',
         APP_TITLE,
-        vscode.ViewColumn.One,
+        vscode.ViewColumn.Active,
         {
             enableScripts: true,
             retainContextWhenHidden: true
         }
     );
 
-    panel.webview.html = getWebviewContent();
+    _panel.webview.html = getWebviewContent();
 
-    panel.webview.onDidReceiveMessage((message: Message) => {
+    _panel.webview.onDidReceiveMessage((message: Message) => {
         switch (message.type) {
             case MessageType.GetState:
-                panel.webview.postMessage({
+                _panel.webview.postMessage({
                     from: 'extension',
                     type: 'sendState',
                     state: context.globalState.get('appState', {})
@@ -81,6 +87,10 @@ function createWebviewPanel(context: vscode.ExtensionContext) {
                 );
                 break;
         }
+    });
+
+    _panel.onDidDispose(() => {
+        _panel = null;
     });
 
     debug(() => setTimeout(() => vscode.commands.executeCommand('workbench.action.webview.openDeveloperTools'), 1000));
