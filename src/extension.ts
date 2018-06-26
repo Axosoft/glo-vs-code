@@ -67,6 +67,8 @@ function createWebviewPanel(context: vscode.ExtensionContext) {
     _panel.webview.html = getWebviewContent();
 
     _panel.webview.onDidReceiveMessage((message: Message) => {
+        // localStorage is not available inside the webview so we add
+        // support for messages to get/set data using the extension's storage.
         switch (message.type) {
             case MessageType.GetState:
                 _panel.webview.postMessage({
