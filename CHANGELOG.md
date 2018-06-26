@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.0
+- Fixed the Glo tab reloading every time the tab gained focus.
+- Fixed Glo not keeping the user logged in after VS Code is fully closed.
+
 ## 1.0.3
 - Updated extension description and details.
 
