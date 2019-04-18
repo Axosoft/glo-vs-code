@@ -8,7 +8,6 @@ function debug(fn: Function) {
     DEBUG && fn();
 }
 
-const APP_TITLE = 'Glo';
 const OPEN_COMMAND = 'glo.open';
 
 enum MessageType {
@@ -36,7 +35,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(openGloCommand);
 
     const statusBarItem = vscode.window.createStatusBarItem();
-    statusBarItem.text = APP_TITLE;
+    statusBarItem.text = config.appTitle;
     statusBarItem.command = OPEN_COMMAND;
     statusBarItem.show();
 
@@ -56,7 +55,7 @@ function createWebviewPanel(context: vscode.ExtensionContext) {
 
     _panel = vscode.window.createWebviewPanel(
         'gitkraken-glo',
-        APP_TITLE,
+        config.appTitle,
         vscode.ViewColumn.Active,
         {
             enableScripts: true,
@@ -106,7 +105,7 @@ function getWebviewContent() {
         <html>
         <head>
             <meta charset="utf-8">
-            <title>${APP_TITLE}</title>
+            <title>${config.appTitle}</title>
             <style>
                 body {
                     padding: 0;
