@@ -39,18 +39,18 @@
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
+    "build": "vsce package",
     "compile": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
-  "dependencies": {
-    "vscode": "^1.1.18"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
     "mocha": "^2.3.3",
     "typescript": "^2.0.3",
-    "vsce": "^1.30.0"
+    "vsce": "^1.30.0",
+    "vscode": "^1.1.18"
   }
 }
