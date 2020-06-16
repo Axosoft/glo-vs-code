@@ -2,7 +2,8 @@
 
 Open GitKraken Boards as a tab in VS Code. GitKraken Boards is an issue board for tracking issues and tasks.
 
-![GitKraken Boards inside VS Code](https://user-images.githubusercontent.com/899916/37066976-01877280-2165-11e8-87ff-d6b04e1d9ca5.png)
+![GitKraken Boards inside VS Code](https://static.axocdn.com/images/glo/marketplaces/vs-code-full-screen.jpg)
+
 
 ## Different ways to open:
 - Click on the `GitKraken Boards` button that this extension adds to your status bar.
@@ -18,28 +19,20 @@ From the starter screen, GitKraken Boards gives you the option to create an empt
 ## Getting Started with GitKraken Boards
 Drag-and-drop columns to arrange them. Click on a card to open and edit the description, assignees, labels, and comments. Edit board settings, like labels and users, in the settings menu.
 
-![...new screen...](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/name-column.png)
+![Getting Started with GitKraken boards](https://static.axocdn.com/images/glo/marketplaces/ui-elements.gif)
 
-## Two -Way GitHub Sync
+## Two-Way GitHub Sync
 GitKraken Boards syncs in real-time with GitHub Issues and GitHub Milestones so changes made in either system are immediately reflected in the other.
 
-![...new screen..](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/name-card.png)
+![Connect GitHub Repositories](https://static.axocdn.com/images/glo/marketplaces/connected-repositories.gif)
 
 Link cards to GitHub pull requests, check PR statuses, auto-update cards based on PR statuses and view build statuses without leaving GitKraken Boards.
 
-![...new screen...](https://support.gitkraken.com/img/documentation/glo/card-features/expand-description.gif)
+![Connect GitHub Pull Requests](https://static.axocdn.com/images/glo/marketplaces/connected-repositories.gif)
 
-## Connect GitKraken Boards with Slack
-The Slack Integration for GitKraken Boards allows you to manage tasks and collaborate with team members directly from your favorite communication tool. Create new task cards from Slack messages, edit card details, and receive notifications.
+## Automate Your Workflow
+User GitHub Actions or built-in column automation to eliminate repetitive processes, like moving cards through workflow columns, assigning users, updating labels, adding relative due dates, and more.
 
-![...new screen...](https://support.gitkraken.com/img/documentation/glo/card-features/create-label.png)
-
-
-
-## Visualizing Your Workflow
-View your workflow as a Kanban board, see due dates populate in a calendar view, and get a high-level overview with timelines view.
-
-![...new screen...](https://support.gitkraken.com/img/documentation/glo/github-sync/connect-github.gif)
-
+![Column Automation](https://static.axocdn.com/images/glo/marketplaces/gif-automation-columns.gif)
 
 See full documentation information on the ![GitKraken Boards Support Site](https://support.gitkraken.com/boards/quick-start/).
