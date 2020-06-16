@@ -1,6 +1,6 @@
 {
   "name": "gitkraken-glo",
-  "displayName": "GitKraken Glo",
+  "displayName": "GitKraken Boards",
   "version": "1.1.0",
   "publisher": "axosoft",
   "author": "Axosoft, LLC",
@@ -35,7 +35,7 @@
       {
         "command": "glo.open",
         "category": "Glo",
-        "title": "Open Glo"
+        "title": "Open GitKraken Boards"
       }
     ]
   },

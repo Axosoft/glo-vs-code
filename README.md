@@ -2,7 +2,7 @@
 
 Open GitKraken Boards as a tab in VS Code. GitKraken Boards is an issue board for tracking issues and tasks.
 
-![GitKraken Boards inside VS Code](https://static.axocdn.com/images/glo/marketplaces/vs-code-full-screen.jpg)
+![GitKraken Boards inside VS Code](https://static.axocdn.com/images/glo/marketplaces/vs-code-full-screen.png)
 
 
 ## Different ways to open:
@@ -28,11 +28,11 @@ GitKraken Boards syncs in real-time with GitHub Issues and GitHub Milestones so 
 
 Link cards to GitHub pull requests, check PR statuses, auto-update cards based on PR statuses and view build statuses without leaving GitKraken Boards.
 
-![Connect GitHub Pull Requests](https://static.axocdn.com/images/glo/marketplaces/connected-repositories.gif)
+![Connect GitHub Pull Requests](https://static.axocdn.com/images/glo/marketplaces/github-pull-request.gif)
 
 ## Automate Your Workflow
-User GitHub Actions or built-in column automation to eliminate repetitive processes, like moving cards through workflow columns, assigning users, updating labels, adding relative due dates, and more.
+Use GitHub Actions or built-in column automation to eliminate repetitive processes, like moving cards through workflow columns, assigning users, updating labels, adding relative due dates, and more.
 
-![Column Automation](https://static.axocdn.com/images/glo/marketplaces/gif-automation-columns.gif)
+![Column Automation](https://static.axocdn.com/images/glo/marketplaces/automation-columns.gif)
 
-See full documentation information on the ![GitKraken Boards Support Site](https://support.gitkraken.com/boards/quick-start/).
+See full documentation information on the [GitKraken Boards Support Site](https://support.gitkraken.com/boards/quick-start/).
