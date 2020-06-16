@@ -1,53 +1,45 @@
-# GitKraken Glo for VS Code
+# GitKraken Boards for VS Code
 
-Open GitKraken Glo as a tab in VS Code. GitKraken Glo is an issue board for tracking issues and tasks.
+Open GitKraken Boards as a tab in VS Code. GitKraken Boards is an issue board for tracking issues and tasks.
 
-![Glo inside VS Code](https://user-images.githubusercontent.com/899916/37066976-01877280-2165-11e8-87ff-d6b04e1d9ca5.png)
+![GitKraken Boards inside VS Code](https://user-images.githubusercontent.com/899916/37066976-01877280-2165-11e8-87ff-d6b04e1d9ca5.png)
 
 ## Different ways to open:
-- Click on the `Glo` button that this extension adds to your status bar.
-- Search for `Glo` in the command palette.
+- Click on the `GitKraken Boards` button that this extension adds to your status bar.
+- Search for `GitKraken Boards` in the command palette.
 
 ## Creating Boards
-Glo gives you the option to create an empty board or create a board with some pre-defined default columns.
+From the starter screen, GitKraken Boards gives you the option to create an empty board, create a new board with templated columns, or open an existing board.
 
 ![Board creation page](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/create-board.png)
 
 ![Default columns](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/starter-board.png)
 
-## Columns
-You can create new columns using the `Add Column` link on the right side of the board.
+## Getting Started with GitKraken Boards
+Drag-and-drop columns to arrange them. Click on a card to open and edit the description, assignees, labels, and comments. Edit board settings, like labels and users, in the settings menu.
 
-![Adding a column](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/name-column.png)
+![...new screen...](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/name-column.png)
 
-You can drag and drop columns to rearrange them.
+## Two -Way GitHub Sync
+GitKraken Boards syncs in real-time with GitHub Issues and GitHub Milestones so changes made in either system are immediately reflected in the other.
 
-![Reordering columns](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/rearrange-column.gif)
+![...new screen..](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/name-card.png)
 
-## Cards
-Create new cards by using the `+` or `Add a card` links on the column.
+Link cards to GitHub pull requests, check PR statuses, auto-update cards based on PR statuses and view build statuses without leaving GitKraken Boards.
 
-![Adding a card](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/name-card.png)
+![...new screen...](https://support.gitkraken.com/img/documentation/glo/card-features/expand-description.gif)
 
-Click on a card to open and edit its information. You can edit the description, as well as add assignees, labels, and comments.
+## Connect GitKraken Boards with Slack
+The Slack Integration for GitKraken Boards allows you to manage tasks and collaborate with team members directly from your favorite communication tool. Create new task cards from Slack messages, edit card details, and receive notifications.
 
-![Editing a card](https://support.gitkraken.com/img/documentation/glo/card-features/expand-description.gif)
+![...new screen...](https://support.gitkraken.com/img/documentation/glo/card-features/create-label.png)
 
-## Labels
-You can add labels to a board by clicking on `[Gear Icon] > Labels`.
 
-![Adding a label](https://support.gitkraken.com/img/documentation/glo/card-features/create-label.png)
 
-## Invite Users
-You can invite other users to a board by clicking on `[Gear Icon] > Users`.
+## Visualizing Your Workflow
+View your workflow as a Kanban board, see due dates populate in a calendar view, and get a high-level overview with timelines view.
 
-![Users panel](https://support.gitkraken.com/img/documentation/glo/start-glo-ing/manage-invite.png)
+![...new screen...](https://support.gitkraken.com/img/documentation/glo/github-sync/connect-github.gif)
 
-## GitHub Issues Sync
-If you are already using GitHub Issues, you can create a board that is synced with a repositories issues.
 
-![Connecting to GitHub](https://support.gitkraken.com/img/documentation/glo/github-sync/connect-github.gif)
-
-![Syncing a new issue](https://support.gitkraken.com/img/documentation/glo/github-sync/sync-issue.gif)
-
-[Click here to see full documention info.](https://support.gitkraken.com/glo/start-glo-ing)
+See full documentation information on the ![GitKraken Boards Support Site](https://support.gitkraken.com/boards/quick-start/).
