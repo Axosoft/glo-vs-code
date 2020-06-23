@@ -34,8 +34,8 @@
     "commands": [
       {
         "command": "glo.open",
-        "category": "Glo",
-        "title": "Open GitKraken Boards"
+        "category": "GitKraken Boards",
+        "title": "Open"
       }
     ]
   },

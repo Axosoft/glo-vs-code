@@ -1,4 +1,4 @@
 export default {
-  appTitle: 'Glo',
+  appTitle: 'GK Boards',
   appUrl: "https://app.gitkraken.com/glo/"
 }
