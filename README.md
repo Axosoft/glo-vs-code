@@ -1,3 +1,6 @@
+**GitKraken Boards will sunset at the end of 2022.** [Read the full announcement to learn more](https://www.gitkraken.com/boards-and-timelines).
+#
+
 # GitKraken Boards for VS Code
 
 Open GitKraken Boards as a tab in VS Code. GitKraken Boards is an issue board for tracking issues and tasks.
