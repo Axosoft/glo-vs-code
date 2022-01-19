@@ -1,4 +1,5 @@
 **GitKraken Boards will sunset at the end of 2022.** [Read the full announcement to learn more](https://www.gitkraken.com/boards-and-timelines).
+
 #
 
 # GitKraken Boards for VS Code

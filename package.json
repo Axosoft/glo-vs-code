@@ -1,7 +1,7 @@
 {
   "name": "gitkraken-glo",
   "displayName": "GitKraken Boards",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "publisher": "axosoft",
   "author": "Axosoft, LLC",
   "description": "Kanban boards for issue & task tracking.",

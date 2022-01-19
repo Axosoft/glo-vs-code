@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.1.2
+- Updated extension README.
+
 ## 1.1.1
 - Updated extension name, description, and details.
 
