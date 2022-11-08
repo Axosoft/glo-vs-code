@@ -1,4 +1,6 @@
-**GitKraken Boards will sunset at the end of 2022.** [Read the full announcement to learn more](https://www.gitkraken.com/boards-and-timelines).
+# ⚠️ This repository is no longer supported.
+
+**⚠️ GitKraken Boards will sunset at the end of 2022.** [Read the full announcement to learn more](https://www.gitkraken.com/boards-and-timelines).
 
 #
 
